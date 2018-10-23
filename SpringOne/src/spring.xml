@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+     http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+     http://www.springframework.org/schema/context
+     http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+	
+		<bean id="tran" class="com.cg.springone.service.Triangle">
+		<property name="sides" value ="10"></property></bean>
+		<bean id="cir"  class="com.cg.springone.service.Circle">
+		<property name="radius" value ="10"></property></bean> 
+		
+		<bean  id="mob" class="com.cg.springone.service.Mobile">
+		<property name="mobId" value="1001"></property>
+		<property name="MobName"  value="akshay"></property></bean>
+		
+		
+		
+		<bean id="employee" class="com.cg.springone.service.Employee" >
+		<property name="employeeid"  value="12345"></property>
+		<property name="emplyeeName"  value="Harriet"></property>
+		<property name="salary"  value="40000"></property>
+		<property name="age"  value="30"></property> </bean>
+		
+		<bean id="sbu" class="com.cg.springone.service.SBU">
+		<property name="sbuId"  value="456"></property>
+		<property name="sbuName"  value="product engineering services"></property>
+		<property name="sbuHead"  value="kiran rao"></property>
+		</bean>
+	
+	 
+</beans>
